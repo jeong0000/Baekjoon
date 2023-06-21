@@ -1,2 +1,2 @@
-# Baekjoon
-Baekjoon Coding Study
+# Baekjoon Coding Study
+
