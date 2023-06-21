@@ -1,6 +1,6 @@
 '''
 나는야 포켓몬 마스터 이다솜
-https://www.acmicpc.net/submit/1620/62286831
+https://www.acmicpc.net/submit/1620
 '''
 
 import sys
