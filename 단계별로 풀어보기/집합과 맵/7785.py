@@ -1,6 +1,6 @@
 '''
 회사에 있는 사람
-https://www.acmicpc.net/submit/7785/62285550
+https://www.acmicpc.net/submit/7785
 '''
 
 n = int(input())
