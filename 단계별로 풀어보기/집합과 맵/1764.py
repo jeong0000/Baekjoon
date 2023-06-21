@@ -1,6 +1,6 @@
 '''
 듣보잡
-https://www.acmicpc.net/submit/1764/62294526
+https://www.acmicpc.net/submit/1764
 '''
 
 import sys
