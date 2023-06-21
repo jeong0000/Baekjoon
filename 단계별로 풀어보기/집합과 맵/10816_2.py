@@ -1,6 +1,6 @@
 '''
 숫자 카드 2 - hashmap 사용
-https://www.acmicpc.net/submit/10816/62293917
+https://www.acmicpc.net/submit/10816
 '''
 
 import sys
