@@ -14,9 +14,7 @@ def gcd(a, b):
         
 for i in range(t):
     a, b = map(int, input().split())
-    if(a<b):
-        a, b = b, a
-    
+
     result = (a * b) // gcd(a, b)
 
     print(result)
