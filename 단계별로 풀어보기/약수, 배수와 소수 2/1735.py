@@ -9,7 +9,7 @@ c, d = map(int, input().split())
 e = a*d + c*b
 f = b*d
 
-# 유클리드 알고리즘 사용
+# 유클리드 알고리즘
 def gcd(m,n):
     if m % n == 0:
         return n
