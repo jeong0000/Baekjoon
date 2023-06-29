@@ -6,7 +6,7 @@ https://www.acmicpc.net/problem/10872
 n = int(input())
 
 result = 1
-for i in range(1, n+2):
+for i in range(2, n+2):
     result *= i
 
 print(result//(n+1))
