@@ -8,7 +8,7 @@ https://www.acmicpc.net/problem/11050
 
 n, k = map(int, input().split())
 
-def Febo(a):
+def Fac(a):
     result = 1
     for i in range(2, a+2):
         result *= i
@@ -16,4 +16,4 @@ def Febo(a):
     result /= (a+1)
     return result
 
-print(int(Febo(n) / (Febo(k) * Febo(n-k))))
+print(int(Fac(n) / (Fac(k) * Fac(n-k))))
