@@ -19,7 +19,7 @@ for _ in range(t):
                 stack.append(0)
                 break
             else:
-                del stack[len(stack)-1]
+                stack.pop()
 
     if len(stack) == 0:
         print('YES')
