@@ -15,8 +15,7 @@ for _ in range(n):
         stack.append(order[1])
     elif(order[0] == 'pop'):
         if len(stack) != 0:
-            print(stack[len(stack)-1])
-            stack.pop()
+            print(stack.pop())
         else:
             print(-1)
     elif(order[0] == 'size'):
