@@ -13,7 +13,7 @@ for _ in range(k):
     
     if n == 0:
         if len(stack) != 0:
-            del stack[len(stack)-1]
+            stack.pop()
     else:
         stack.append(n)
 
