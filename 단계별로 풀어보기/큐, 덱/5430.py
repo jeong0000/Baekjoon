@@ -20,12 +20,12 @@ for _ in range(t):
     flag = 0
     for i in p:
         if i == "R":
+            flag += 1
             
             # reverse() 사용 시 시간초과 발생
             # reverse()의 시간복잡도 : O(n)
             # for 문 안에서의 사용이기에 시간복잡도 -> O(n^2)
             
-            flag += 1
         elif i == "D":
             if queue:
                 if flag % 2 == 0:
