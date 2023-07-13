@@ -12,7 +12,8 @@ for _ in range(t):
     p = sys.stdin.readline().rstrip()
     n = int(sys.stdin.readline())
     queue = deque(sys.stdin.readline().rstrip()[1:-1].split(","))
-    
+
+    # 입력값(n)이 0일 경우 빈 배열로 초기화
     if n == 0:
         queue = []
 
