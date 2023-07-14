@@ -8,7 +8,7 @@ import sys
 def kan(s,n):
     if n == 1:
         return
-    for i in range(s + n//3, s +(n//3)*2):
+    for i in range(s + n//3, s + (n//3)*2):
         line[i] = " "
     kan(s, n//3)
     kan(s + n//3 * 2, n//3)
