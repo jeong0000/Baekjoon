@@ -21,7 +21,7 @@ def merge(a, p, q, r):
     j = q+1
     
     tmp = []
-    while (i <= q and j <= r):
+    while (i <= q and j <= r): # 분할 정렬된 list의 합병
         if (a[i] <= a[j]):
             tmp.append(a[i])
             i += 1
@@ -29,10 +29,10 @@ def merge(a, p, q, r):
             tmp.append(a[j])
             j += 1
 
-    while (i <= q): # 왼쪽 배열 부분이 남은 경우
+    while (i <= q): # 왼쪽 배열 부분이 남은 경우, 남아 있는 값들을 일괄 복사
         tmp.append(a[i])
         i += 1
-    while (j <= r): # 오른쪽 배열 부분이 남은 경우
+    while (j <= r): # 오른쪽 배열 부분이 남은 경우, 남아 있는 값들을 일괄 복사
         tmp.append(a[j])
         j += 1
 
