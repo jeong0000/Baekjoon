@@ -5,6 +5,7 @@ https://www.acmicpc.net/problem/2447
 
 import sys
 
+# n = 3일 경우 -> ary = ['***', '* *', '***']
 def star(len):
     if len == 1:
         return "*"
