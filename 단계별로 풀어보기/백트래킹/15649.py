@@ -3,6 +3,8 @@ N과 M (1)
 https://www.acmicpc.net/problem/15649
 '''
 
+# 백트래킹 입문 문제 1
+
 import sys
 input = sys.stdin.readline
 
