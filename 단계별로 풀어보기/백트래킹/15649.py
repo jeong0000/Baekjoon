@@ -3,6 +3,25 @@ N과 M (1)
 https://www.acmicpc.net/problem/15649
 '''
 
+import sys
+input = sys.stdin.readline
+
+def btk():
+    if len(s) == m:
+        print(' '.join(map(str, s)))
+        return
+    
+    for i in range(1, n+1):
+        if i in s:
+            continue
+        s.append(i)
+        btk()
+        s.pop()
+
+
+n, m = map(int, input().split())
+s = []
+btk()
 
 '''
 
