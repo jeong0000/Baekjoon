@@ -3,7 +3,7 @@ N-Queen
 https://www.acmicpc.net/problem/9663
 '''
 
-#pypy3로 제출
+#PyPy3으로 제출
 
 import sys
 input = sys.stdin.readline
