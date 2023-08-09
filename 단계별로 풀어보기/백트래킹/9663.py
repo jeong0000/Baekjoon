@@ -18,7 +18,7 @@ def is_promising(x):
         # row[x] == row[i] : 같은 열에 존재하는지 확인
         # abs(row[x] - row[i]) == abs(x - i) : 같은 대각선에 존재하는지 확인
         # 현재 위치 (2,1)일 경우, 오른쪽 대각선 (1,0), (3,2), (4,3) | 왼쪽 대각선 (0,3), (1,2), (3,0)
-        if row[x] == row[i] or abs(row[x] - row[i]) == abs(x - i):
+        if (row[x] == row[i]) or (abs(row[x] - row[i]) == abs(x - i)):
             return False
     return True
 
