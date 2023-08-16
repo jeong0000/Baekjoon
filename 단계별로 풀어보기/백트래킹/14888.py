@@ -33,3 +33,42 @@ def btk(add, sub, mul, div, sum, i):
 btk(add, sub, mul, div, a[0], 1)
 print(int(max_n))
 print(int(min_n))
+
+'''
+# permutations 사용 - PyPy3로 제출
+
+import sys
+from itertools import permutations
+input = sys.stdin.readline
+
+n = int(input())
+a = list(map(int, input().split()))
+add, sub, mul, div = map(int, input().split())
+op = "+" * add + "-" * sub + "*" * mul + "/" * div
+
+max_n = -1e9
+min_n = 1e9
+
+def insert_op():
+    global max_n, min_n
+
+    for case in permutations(op, n-1):
+        result = a[0]
+
+        for i in range(1, n):
+            if case[i-1] == "+":
+                result += a[i]
+            elif case[i-1] == "-":
+                result -= a[i]
+            elif case[i-1] == "*":
+                result *= a[i]
+            elif case[i-1] == "/":
+                result = int(result/a[i])
+
+        max_n = max(result, max_n)
+        min_n = min(result, min_n)
+
+insert_op()
+print(max_n)
+print(min_n)
+'''
