@@ -15,7 +15,7 @@ for i in range(n):
 visited = [False for _ in range(n)]
 min_n = 100
 
-def btk(depth, i):
+def btk(depth, idx):
     global min_n
 
     if depth == n//2:
@@ -29,7 +29,7 @@ def btk(depth, i):
         min_n = min(min_n, abs(start - link))
         return
     
-    for i in range(i, n):
+    for i in range(idx, n):
         if not visited[i]:
             visited[i] = True
             btk(depth+1, i+1)
